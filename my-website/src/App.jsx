@@ -5,12 +5,15 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/navbar";
+import About from "./pages/about";
 
 function App() {
   return (
     <Router>
       <NavBar />
-      <Routes></Routes>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
     </Router>
   );
 }
