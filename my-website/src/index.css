@@ -11,12 +11,35 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Primary Brand Colors */
+  --color-primary: #4f46e5; /* Indigo 600 */
+  --color-primary-hover: #6366f1; /* Indigo 500 */
+
+  /* Accent Color */
+  --color-accent: #10b981; /* Emerald 500 */
+
+  /* Backgrounds */
+  --color-background: #f9fafb; /* Light Gray */
+  --color-card: #ffffff; /* White for cards/containers */
+
+  /* Text Colors */
+  --color-text: #111827; /* Very Dark Gray */
+  --color-text-secondary: #6b7280; /* Cool Gray 500 */
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  background-color: var(--color-background);
+  color: var(--color-text);
   min-width: 320px;
   min-height: 100vh;
+}
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-primary-hover);
 }
