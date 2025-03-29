@@ -1,34 +1,31 @@
 import React from "react";
 import "../styles/about.css";
-
+import { motion } from "framer-motion";
 function About() {
   return (
-    <div className="about-layout">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      transition={{ duration: 0.5 }}
+      className="about-layout"
+    >
       <div className="about">
         <h1>About Me</h1>
-        <p>
-          I'm Kevin Paiz, a Computer Science student at Farmingdale State
-          College, graduating in May 2025. I recently completed a Software
-          Engineer Internship at Umbrava, where I improved the reliability of a
-          web application by developing over 100 automated UI tests using
-          Playwright, React, and GraphQL, reducing manual testing efforts by
-          60%. Additionally, I participated in CodePath’s Web Development
-          program, gaining hands-on experience building full-stack applications
-          with React, and deepening my knowledge of modern web technologies. I
-          have a strong technical foundation in Java, Kotlin, Python,
-          JavaScript, and C#, with experience using Spring Boot, Node.js,
-          PostgreSQL, Firebase, and CI/CD pipelines. I’m passionate about
-          writing clean, scalable code and continuously expanding my skills in
-          software development.
+        <p className="description-about">
+          I am a Computer Science student at Farmingdale State College,
+          graduating in May 2025. I recently completed a Software Engineer
+          Internship at Umbrava, where I improved the reliability of a web
+          application by developing over 100 automated UI tests using
+          Playwright, React, and GraphQL, I participated in CodePath’s Web
+          Development program, gaining hands-on experience building full-stack
+          applications with React.
         </p>
       </div>
       <div className="profile-picture">
-        <img
-          src="https://avatars.githubusercontent.com/u/69616951?v=4"
-          alt="Kevin Paiz Ramos"
-        />
+        <img src="./src/assets/ghili kevin.png" alt="Kevin Paiz Ramos" />
       </div>
-    </div>
+    </motion.div>
   );
 }
 export default About;

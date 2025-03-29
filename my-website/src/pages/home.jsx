@@ -2,10 +2,17 @@ import React from "react";
 import "../styles/home.css";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import GitHub and LinkedIn icons
+import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="home-layout">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      transition={{ duration: 0.5 }}
+      className="home-layout"
+    >
       <span className="welcome-message">
         <h1>Hi, I am Kevin Paiz Ramos</h1>
         <Typewriter
@@ -49,7 +56,7 @@ function Home() {
           <FaLinkedin size={60} />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
 export default Home;
