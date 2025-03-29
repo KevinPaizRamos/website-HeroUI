@@ -1,0 +1,46 @@
+.home-layout {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align all child elements horizontally */
+  justify-content: center; /* Center-align all child elements vertically */
+  text-align: left; /* Center-align text inside the elements */
+  margin-top: 50px;
+}
+.home-layout h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+.welcome-message {
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+.description {
+  font-size: 1.25rem; /* Adjust font size as needed */
+  margin-top: 10px; /* Add spacing between the span and the paragraph */
+  text-align: left; /* Ensure the text is centered */
+  max-width: 720px; /* Optional: Limit the width for better readability */
+  font-weight: 400;
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.social-icons a {
+  color: var(--color-text); /* Adjust to your theme */
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary-hover); /* Adjust to your theme */
+}

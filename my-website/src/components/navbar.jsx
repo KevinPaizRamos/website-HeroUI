@@ -11,6 +11,9 @@ function NavBar() {
       <div className="navbar-logo">Kevin Paiz Ramos</div>
       <ul className="navbar-links">
         <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
           <Link to="/about">About</Link>
         </li>
         <li>
