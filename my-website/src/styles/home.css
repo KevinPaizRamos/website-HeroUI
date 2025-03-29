@@ -26,7 +26,7 @@
   margin-top: 10px; /* Add spacing between the span and the paragraph */
   text-align: left; /* Ensure the text is centered */
   max-width: 720px; /* Optional: Limit the width for better readability */
-  font-weight: 400;
+  font-weight: 500;
 }
 .social-icons {
   display: flex;

@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/home.css";
 import { Typewriter } from "react-simple-typewriter";
 import { FaGithub, FaLinkedin } from "react-icons/fa"; // Import GitHub and LinkedIn icons
+
 function Home() {
   return (
     <div className="home-layout">
@@ -18,15 +19,15 @@ function Home() {
           loop={true}
           cursor
           cursorStyle="|"
-          typeSpeed={80}
+          typeSpeed={100}
           deleteSpeed={50}
           delaySpeed={1000}
         />
       </span>
       <p className="description">
         I am a Full-Stack / Front-End Developer. I am currently working on
-        expanding my knowledge in the field of AI and Machine Learning, looking
-        for full time opportunities to grow and learn.
+        expanding my knowledge in the field of Full-Stack development and AI and
+        Machine Learning, looking for full time opportunities to grow and learn.
         <br />
       </p>
       {/* Social Media Icons */}
