@@ -24,7 +24,7 @@
 
 .description-about {
   font-size: 1.2rem;
-  color: var(--color-text-secondary);
+  color: var(--color-text);
   margin-top: 10px;
   max-width: 600px;
   line-height: 1.5;
