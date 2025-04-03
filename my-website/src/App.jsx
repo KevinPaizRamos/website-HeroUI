@@ -4,11 +4,13 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+
 import { motion } from "framer-motion";
 
 import NavBar from "./components/navbar";
 import About from "./pages/about";
 import Home from "./pages/home";
+import WorkExperience from "./pages/experience";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<WorkExperience />} />
         </Routes>
       </AnimatePresence>
     </Router>

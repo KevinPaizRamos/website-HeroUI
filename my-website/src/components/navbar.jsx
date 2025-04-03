@@ -17,13 +17,13 @@ function NavBar() {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/projects">Experience</Link>
+          <Link to="/experience">Experience</Link>
         </li>
         <li>
-          <Link to="/contact">Projects</Link>
+          <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="/blog">Skills</Link>
+          <Link to="/skills">Skills</Link>
         </li>
         <li>
           <Link to="/resume">Resume</Link>
