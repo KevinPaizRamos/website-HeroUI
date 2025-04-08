@@ -11,6 +11,7 @@ import NavBar from "./components/navbar";
 import About from "./pages/about";
 import Home from "./pages/home";
 import WorkExperience from "./pages/experience";
+import Projects from "./pages/projects";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<WorkExperience />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </AnimatePresence>
     </Router>
