@@ -2,9 +2,9 @@ const projectsContent = [
   {
     title: "Gamespace",
     description:
-      "Social media platform for gamers where you can: find your next game partner or team, share your gameing experience,\n" +
+      "Social media platform for gamers where you can: find your next game partner or team, share your gaming experience,\n" +
       " sell your gaming related items and find gaming related events.",
-
+    imageSrc: "/gamespace.png",
     links: [
       { url: "https://gamespacegamers.online/", label: "View Project" },
       { url: "https://github.com/AaronScott2025/GameSpace", label: "GitHub" },
