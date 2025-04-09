@@ -8,7 +8,7 @@ import "../styles/projects.css";
 
 function Projects() {
   return (
-    <div className="projects-page">
+    <motion.div className="projects-page">
       {projectsContent.map((project, index) => (
         <ProjectCard
           key={index}
@@ -19,7 +19,7 @@ function Projects() {
           links={project.links}
         />
       ))}
-    </div>
+    </motion.div>
   );
 }
 export default Projects;

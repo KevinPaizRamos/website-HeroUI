@@ -1,7 +1,8 @@
 import React from "react";
 import "../styles/project-card.css";
 import TechnologiesLabel from "./techologies-label";
-import { FaReact } from "react-icons/fa";
+import { CiLink } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa6";
 // Importing the React icon from react-icons
 
 function ProjectCard({
@@ -12,6 +13,11 @@ function ProjectCard({
   icon,
   links,
 }) {
+  const linksIcons = {
+    "View Project": CiLink,
+    GitHub: FaGithub,
+  };
+
   return (
     <div className="project-card">
       <img src={imageUrl} alt={title} className="project-image" />
@@ -22,17 +28,21 @@ function ProjectCard({
         Icon={icon} // Pass the icon prop to TechnologiesLabel
       />
       <div className="project-links">
-        {links.map((link, index) => (
-          <a
-            key={index}
-            href={link.url}
-            className="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {link.label}
-          </a>
-        ))}
+        {links.map((link, index) => {
+          const Icon = linksIcons[link.label]; // Get the icon for the link label
+          return (
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              {Icon && <Icon />} {/* Render the icon if it exists */}
+              {link.label}
+            </a>
+          );
+        })}
       </div>
     </div>
   );
