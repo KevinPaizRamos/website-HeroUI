@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { AnimatePresence, motion, usePresenceData, wrap } from "motion/react";
+import {
+  AnimatePresence,
+  color,
+  motion,
+  usePresenceData,
+  wrap,
+} from "motion/react";
 import projectsContent from "../utils/projects-content";
 import ProjectCard from "../components/project-card";
 import "../styles/projects.css";
@@ -22,7 +28,14 @@ function Projects() {
   const color = `var(--hue-${selectedProject})`; // Dynamic color based on selected project
 
   return (
-    <div className="projects-page" style={container}>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      transition={{ duration: 0.5 }}
+      className="projects-page"
+      style={container}
+    >
       <motion.button
         initial={false}
         animate={{ backgroundColor: color }}
@@ -52,7 +65,7 @@ function Projects() {
       >
         <ArrowRight />
       </motion.button>
-    </div>
+    </motion.div>
   );
 }
 
@@ -118,7 +131,8 @@ const container = {
 };
 
 const button = {
-  backgroundColor: "#0cdcf7",
+  backgroundColor: "black",
+  color: "black",
   width: 40,
   height: 40,
   borderRadius: "50%",

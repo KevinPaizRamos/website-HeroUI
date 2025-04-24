@@ -38,19 +38,19 @@ const projectsContent = [
       "A humorous stock advisor that suggests buy/sell actions based on historical data and random correlations, such as lunar new years or moon phases. Features include stock graphs, filters for cyclical events, and multiple chart styles like line and candlestick. Stocks are limited to Google, Apple, Microsoft, Amazon, and Meta. This is not stock trading advice.",
     imageSrc: "/stock.png",
     links: [
-      { url: "https://github.com/Verdenroz/StockDiviner", label: "Github" },
+      { url: "https://github.com/Verdenroz/StockDiviner", label: "GitHub" },
     ],
-    technologies: ["Java", "firebase", "AlphaVantage", "FinancialModelingPrep"],
+    technologies: ["Java", "Firebase", "AlphaVantage", "FinancialModelingPrep"],
   },
   {
     title: "Sales Management System",
     description:
-      "Sales Mangement System is an Android application designed to store and manage records of sales, providing a user-friendly interface for businesses to track their sales data.",
+      "Sales Management System is an Android application designed to securely store and manage sales records. It features user authentication for secure access and follows the MVVM architecture to ensure a clean and maintainable codebase. The app provides a user-friendly interface for businesses to track and analyze their sales data efficiently.",
     imageSrc: "/sales.gif",
     links: [
       {
         url: "https://github.com/KevinPaizRamos/Sales_Records_App",
-        label: "Github",
+        label: "GitHub",
       },
     ],
     technologies: ["Kotlin", "Android Studio", "Firebase", "MVVM"],
