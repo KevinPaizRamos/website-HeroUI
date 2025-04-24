@@ -23,7 +23,7 @@ function About() {
         </p>
       </div>
       <div className="profile-picture">
-        <img src="./src/assets/ghili kevin.png" alt="Kevin Paiz Ramos" />
+        <img src="ghili kevin.png" alt="Kevin Paiz Ramos" />
       </div>
     </motion.div>
   );
