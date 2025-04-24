@@ -8,6 +8,8 @@
 }
 .project-description {
   text-align: left;
+  font-size: 20px; /* Font size for the description */
+  color: #374151; /* Text color */
 }
 .project-links {
   display: flex;
@@ -26,6 +28,12 @@
   background-color: var(--color-primary-hover); /* Change color on hover */
   color: white; /* Ensure text remains white on hover */
   transition: background-color 0.3s; /* Smooth transition for color change */
+}
+.project-title {
+  font-size: 24px; /* Font size for the title */
+  font-weight: bold; /* Bold text */
+  color: var(--color-primary); /* Text color */
+  margin-bottom: 10px; /* Space below the title */
 }
 
 .project-image {

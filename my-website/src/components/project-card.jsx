@@ -22,11 +22,12 @@ function ProjectCard({
     <div className="project-card">
       <img src={imageUrl} alt={title} className="project-image" />
       <h3 className="project-title">{title}</h3>
-      <p className="project-description">{description}</p>
       <TechnologiesLabel
         technologies={technologies}
         Icon={icon} // Pass the icon prop to TechnologiesLabel
       />
+      <p className="project-description">{description}</p>
+
       <div className="project-links">
         {links.map((link, index) => {
           const Icon = linksIcons[link.label]; // Get the icon for the link label

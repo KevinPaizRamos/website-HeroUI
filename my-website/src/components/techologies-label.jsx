@@ -4,11 +4,12 @@ import { FaJava, FaCode } from "react-icons/fa6"; // Example icons
 import { SiFirebase, SiKotlin, SiAndroidstudio } from "react-icons/si"; // More icons
 import { RiJavascriptFill, RiSupabaseFill, RiOpenaiFill } from "react-icons/ri";
 import { AiOutlineStock } from "react-icons/ai";
+import { motion } from "motion/react";
 function TechnologiesLabel({ technologies, Icon }) {
   const styles = {
     display: "flex",
     flexWrap: "wrap",
-    gap: "10px",
+    gap: "25px",
     margin: "20px",
   };
 
@@ -16,6 +17,7 @@ function TechnologiesLabel({ technologies, Icon }) {
     display: "flex",
     alignItems: "center",
     gap: "5px",
+    fontSize: "20px",
   };
 
   // Map technologies to their corresponding icons
@@ -42,10 +44,16 @@ function TechnologiesLabel({ technologies, Icon }) {
       {technologies.map((technology, index) => {
         const Icon = technologyIcons[technology]; // Get the icon for the technology
         return (
-          <span key={index} className="technology-label" style={labelStyles}>
+          <motion.span
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            key={index}
+            className="technology-label"
+            style={labelStyles}
+          >
             {Icon && <Icon />} {/* Render the icon if it exists */}
             {technology}
-          </span>
+          </motion.span>
         );
       })}
     </div>
