@@ -27,6 +27,10 @@ function Footer() {
           <FaLinkedin size={60} />
         </a>
       </div>
+      <p style={{ color: "black" }}>
+        &copy; {new Date().getFullYear()} Kevin Paiz Ramos. All rights reserved.
+      </p>{" "}
+      {/* Corrected copyright symbol */}
     </footer>
   );
 }
