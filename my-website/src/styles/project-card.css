@@ -5,7 +5,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.3s; /* Smooth scaling on hover */
   margin: 20px; /* Margin around the card */
-  height: 60vh;
 }
 .project-description {
   text-align: left;

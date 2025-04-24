@@ -12,6 +12,7 @@ import About from "./pages/about";
 import Home from "./pages/home";
 import WorkExperience from "./pages/experience";
 import Projects from "./pages/projects";
+import Skills from "./pages/skills";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<WorkExperience />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
         </Routes>
       </AnimatePresence>
     </Router>

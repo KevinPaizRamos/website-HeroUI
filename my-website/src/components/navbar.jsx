@@ -25,9 +25,6 @@ function NavBar() {
         <li>
           <Link to="/skills">Skills</Link>
         </li>
-        <li>
-          <Link to="/resume">Resume</Link>
-        </li>
       </ul>
     </nav>
   );
