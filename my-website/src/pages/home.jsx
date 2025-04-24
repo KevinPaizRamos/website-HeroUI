@@ -38,24 +38,6 @@ function Home() {
         <br />
       </p>
       {/* Social Media Icons */}
-      <div className="social-icons">
-        <a
-          href="https://github.com/KevinPaizRamos"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-        >
-          <FaGithub size={60} />
-        </a>
-        <a
-          href="https://linkedin.com/in/kevinpaiz"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <FaLinkedin size={60} />
-        </a>
-      </div>
     </motion.div>
   );
 }

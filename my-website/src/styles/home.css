@@ -28,19 +28,3 @@
   max-width: 720px; /* Optional: Limit the width for better readability */
   font-weight: 500;
 }
-.social-icons {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.social-icons a {
-  color: var(--color-text); /* Adjust to your theme */
-  font-size: 2rem;
-  transition: color 0.3s;
-}
-
-.social-icons a:hover {
-  color: var(--color-primary-hover); /* Adjust to your theme */
-}

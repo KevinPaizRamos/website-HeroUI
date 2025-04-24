@@ -1,0 +1,21 @@
+.footer {
+  color: white; /* White text */
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: var(--color-text); /* Primary color for links */
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary-hover); /* Change color on hover */
+  text-decoration: underline; /* Underline on hover */
+}

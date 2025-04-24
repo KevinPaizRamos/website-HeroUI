@@ -13,6 +13,7 @@ import Home from "./pages/home";
 import WorkExperience from "./pages/experience";
 import Projects from "./pages/projects";
 import Skills from "./pages/skills";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
         </Routes>
       </AnimatePresence>
+      <Footer />
     </Router>
   );
 }

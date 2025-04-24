@@ -4,10 +4,10 @@
   align-items: center;
   width: 100%;
   max-width: 1200px; /* Set a maximum width for consistency */
-
+  background-color: var(--color-card);
   color: var(--color-text);
   padding: 1rem 2rem;
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
   position: sticky;
   top: 0;
   z-index: 100;
