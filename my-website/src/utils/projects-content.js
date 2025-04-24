@@ -25,16 +25,28 @@ const projectsContent = [
     description:
       "Platform for developers to discuss recent technical interviews and data structures and algorithms questions,\n." +
       " share their Hackerrank and Leetcode recent submissions and find new ways to improve their coding skills.",
-
+    imageSrc: "/algo.gif",
     links: [
       { url: "https://github.com/KevinPaizRamos/Algo-Forum", label: "GitHub" },
     ],
     technologies: ["JavaScript", "React", "Node.js", "Supabase(PostgreSQL)"],
   },
+
+  {
+    title: "Stock Diviner",
+    description:
+      "A humorous stock advisor that suggests buy/sell actions based on historical data and random correlations, such as lunar new years or moon phases. Features include stock graphs, filters for cyclical events, and multiple chart styles like line and candlestick. Stocks are limited to Google, Apple, Microsoft, Amazon, and Meta. This is not stock trading advice.",
+    imageSrc: "/stock.png",
+    links: [
+      { url: "https://github.com/Verdenroz/StockDiviner", label: "Github" },
+    ],
+    technologies: ["Java", "firebase", "AlphaVantage", "FinancialModelingPrep"],
+  },
   {
     title: "Sales Management System",
     description:
       "Sales Mangement System is an Android application designed to store and manage records of sales, providing a user-friendly interface for businesses to track their sales data.",
+    imageSrc: "/sales.gif",
     links: [
       {
         url: "https://github.com/KevinPaizRamos/Sales_Records_App",
@@ -43,15 +55,5 @@ const projectsContent = [
     ],
     technologies: ["Kotlin", "Android Studio", "Firebase", "MVVM"],
   },
-  {
-    title: "Stock Diviner",
-    description:
-      "A joke stock advisor that suggests buy/sell actions depending on past historical performances correlated with some cyclical events like lunar new years, moon phases, etc. This is not stock trading advice. Stock data will be graphed and the cyclical events can be filtered on top of the graph. There will be multiple chart styles such as line and candlestick. The stocks will be limited to Google, Apple, Microsoft, Amazon, Meta. Our purpose is to create an application that makes ridiculous correlations between stock data and something random.",
-    links: [
-      { url: "https://github.com/Verdenroz/StockDiviner", label: "Github" },
-    ],
-    technologies: ["Java", "firebase", "AlphaVantage", "FinancialModelingPrep"],
-  },
 ];
-
 export default projectsContent;

@@ -5,6 +5,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.3s; /* Smooth scaling on hover */
   margin: 20px; /* Margin around the card */
+  height: 60vh;
 }
 .project-description {
   text-align: left;
@@ -30,7 +31,7 @@
 
 .project-image {
   width: 100%; /* Make the image take the full width of its container */
-  height: 300px; /* Maintain aspect ratio */
+  height: 35vh; /* Maintain aspect ratio */
   border-radius: 10px; /* Add rounded corners */
   object-fit: cover; /* Ensure the image covers the container without distortion */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
