@@ -1,29 +1,54 @@
 import React from "react";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+
 import "../styles/navbar.css";
-import styled, { ThemeContext } from "styled-components";
-import { useContext, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
+import { Link, useLocation } from "react-router-dom";
 
 function NavBar() {
+  const location = useLocation();
   return (
     <nav className="navbar">
       <div className="navbar-logo">Kevin Paiz Ramos</div>
       <ul className="navbar-links">
         <li>
-          <Link to="/">Home</Link>
+          <Link
+            to="/"
+            className={location.pathname === "/" ? "active-link" : ""}
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link
+            to="/about"
+            className={location.pathname === "/about" ? "active-link" : ""}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/skills">Skills</Link>
+          <Link
+            to="/skills"
+            className={location.pathname === "/skills" ? "active-link" : ""}
+          >
+            Skills
+          </Link>
         </li>
         <li>
-          <Link to="/experience">Experience</Link>
+          <Link
+            to="/experience"
+            className={location.pathname === "/experience" ? "active-link" : ""}
+          >
+            Experience
+          </Link>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <Link
+            to="/projects"
+            className={location.pathname === "/projects" ? "active-link" : ""}
+          >
+            Projects
+          </Link>
         </li>
       </ul>
     </nav>

@@ -4,10 +4,10 @@
   align-items: center;
   width: 100%;
   max-width: 1200px; /* Set a maximum width for consistency */
-  background-color: var(--color-card);
+
   color: var(--color-text);
   padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
   position: sticky;
   top: 0;
   z-index: 100;
@@ -39,6 +39,13 @@
 
 .navbar-links a:hover {
   color: var(--color-primary-hover);
+}
+.navbar-links a.active-link {
+  background-color: var(--color-primary);
+  color: var(--color-card);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Responsive (Optional) */
