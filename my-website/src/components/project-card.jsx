@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/project-card.css";
 import TechnologiesLabel from "./techologies-label";
 import { CiLink } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa6";
+import ImageViewer from "./ImageViewer"; // Importing the ImageViewer component
 // Importing the React icon from react-icons
 
 function ProjectCard({
@@ -13,6 +14,7 @@ function ProjectCard({
   icon,
   links,
 }) {
+  const [isViewerOpen, setIsViewerOpen] = useState(false); // State to control the image viewer
   const linksIcons = {
     "View Project": CiLink,
     GitHub: FaGithub,
@@ -20,7 +22,12 @@ function ProjectCard({
 
   return (
     <div className="project-card">
-      <img src={imageUrl} alt={title} className="project-image" />
+      <img
+        src={imageUrl}
+        alt={title}
+        className="project-image"
+        onClick={() => setIsViewerOpen(true)}
+      />
       <h3 className="project-title">{title}</h3>
       <TechnologiesLabel
         technologies={technologies}
@@ -45,6 +52,13 @@ function ProjectCard({
           );
         })}
       </div>
+      {/* Render the ImageViewer if isViewerOpen is true */}
+      {isViewerOpen && (
+        <ImageViewer
+          imageUrl={imageUrl}
+          onClose={() => setIsViewerOpen(false)} // Close the viewer
+        />
+      )}
     </div>
   );
 }
