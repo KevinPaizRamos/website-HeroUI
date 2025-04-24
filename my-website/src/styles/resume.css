@@ -1,0 +1,57 @@
+.resume-page {
+  padding: 20px;
+  max-width: 1600px; /* Increase max-width for more space */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 40px; /* Add more space between the info and viewer */
+}
+
+.resume-info {
+  flex: 0.8; /* Reduce the width of the info section */
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.resume-page h1 {
+  font-size: 36px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.resume-page p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.download-resume-button {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.download-resume-button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.resume-viewer {
+  flex: 3.2; /* Increase the width of the viewer */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.resume-iframe {
+  width: 100%; /* Make the iframe take the full width of its container */
+  height: 800px; /* Maintain height for better visibility */
+  border: none;
+}

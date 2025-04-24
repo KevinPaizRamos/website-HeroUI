@@ -34,6 +34,7 @@ function NavBar() {
             Skills
           </Link>
         </li>
+
         <li>
           <Link
             to="/experience"
@@ -48,6 +49,14 @@ function NavBar() {
             className={location.pathname === "/projects" ? "active-link" : ""}
           >
             Projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/resume"
+            className={location.pathname === "/resume" ? "active-link" : ""}
+          >
+            Resume
           </Link>
         </li>
       </ul>

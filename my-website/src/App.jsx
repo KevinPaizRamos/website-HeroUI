@@ -13,11 +13,14 @@ import Home from "./pages/home";
 import WorkExperience from "./pages/experience";
 import Projects from "./pages/projects";
 import Skills from "./pages/skills";
+import Resume from "./pages/resume";
 import Footer from "./components/footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes>
@@ -26,6 +29,7 @@ function App() {
           <Route path="/experience" element={<WorkExperience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </AnimatePresence>
       <Footer />
