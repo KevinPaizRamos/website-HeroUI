@@ -1,7 +1,9 @@
 import React from "react";
-import { FaReact, FaNodeJs, FaPython, FaAws } from "react-icons/fa"; // Example icons
-import { SiFirebase } from "react-icons/si"; // More icons
+import { FaReact, FaNodeJs, FaPython, FaAws } from "react-icons/fa";
+import { FaJava, FaCode } from "react-icons/fa6"; // Example icons
+import { SiFirebase, SiKotlin, SiAndroidstudio } from "react-icons/si"; // More icons
 import { RiJavascriptFill, RiSupabaseFill, RiOpenaiFill } from "react-icons/ri";
+import { AiOutlineStock } from "react-icons/ai";
 function TechnologiesLabel({ technologies, Icon }) {
   const styles = {
     display: "flex",
@@ -27,6 +29,12 @@ function TechnologiesLabel({ technologies, Icon }) {
     FlaskAPI: FaPython, // Assuming Flask uses Python icon
     AWS: FaAws,
     OpenAI: RiOpenaiFill,
+    Java: FaJava,
+    Kotlin: SiKotlin,
+    "Android Studio": SiAndroidstudio,
+    FinancialModelingPrep: AiOutlineStock, // Assuming Java for this icon
+    AlphaVantage: AiOutlineStock, // Assuming Java for this icon
+    MVVM: FaCode, // Assuming MVVM uses Java icon
   };
 
   return (
