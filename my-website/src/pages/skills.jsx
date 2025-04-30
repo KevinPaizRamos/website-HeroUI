@@ -7,7 +7,6 @@ import {
   usePresenceData,
   wrap,
 } from "motion/react";
-import "../styles/skillsSection.css";
 
 function Skills() {
   const languages = [
