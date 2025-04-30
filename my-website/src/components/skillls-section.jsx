@@ -1,6 +1,6 @@
 import React from "react";
 import * as motion from "motion/react-client";
-import "../styles/skillsSection.css";
+import "../styles/SkillsSection.css";
 
 function SkillsSection({ title, content }) {
   return (
