@@ -55,3 +55,57 @@
   height: 800px; /* Maintain height for better visibility */
   border: none;
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .resume-page {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Reduce the gap between sections */
+  }
+
+  .resume-info {
+    flex: 1; /* Take full width */
+    text-align: center; /* Center-align text */
+    align-items: center; /* Center-align content */
+  }
+
+  .resume-page h1 {
+    font-size: 28px; /* Reduce font size */
+  }
+
+  .resume-page p {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .download-resume-button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+
+  .resume-viewer {
+    flex: 1; /* Take full width */
+    height: auto; /* Adjust height */
+  }
+
+  .resume-iframe {
+    height: 600px; /* Reduce iframe height */
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-page h1 {
+    font-size: 24px; /* Further reduce font size */
+  }
+
+  .resume-page p {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  .download-resume-button {
+    font-size: 12px; /* Further reduce button font size */
+    padding: 6px 12px; /* Adjust padding */
+  }
+
+  .resume-iframe {
+    height: 400px; /* Further reduce iframe height */
+  }
+}

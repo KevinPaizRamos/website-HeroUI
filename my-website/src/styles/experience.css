@@ -23,3 +23,31 @@
   font-weight: 400;
   margin-top: 0; /* Remove extra space above the location */
 }
+.experience-layout {
+  padding: 2rem;
+}
+
+.vertical-timeline-element {
+  margin-bottom: 2rem; /* Default spacing between elements */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .vertical-timeline-element {
+    margin-bottom: 3rem; /* Increase spacing for smaller screens */
+  }
+
+  .vertical-timeline-element-content {
+    padding: 1rem; /* Adjust padding for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .vertical-timeline-element {
+    margin-bottom: 4rem; /* Further increase spacing for very small screens */
+  }
+
+  .vertical-timeline-element-content {
+    padding: 0.8rem; /* Reduce padding slightly for compact layout */
+  }
+}

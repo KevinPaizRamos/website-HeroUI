@@ -7,6 +7,7 @@ import {
   usePresenceData,
   wrap,
 } from "motion/react";
+import "../styles/skillsSection.css";
 
 function Skills() {
   const languages = [
@@ -175,12 +176,6 @@ function Skills() {
       transition={{ duration: 0.5 }}
       className="skills-page"
     >
-      <header className="skills-header">
-        <h1 style={{ color: "#4f46e5" }}>Skills</h1>
-        <h2 style={{ fontWeight: "500" }}>
-          Here are some of the skills I have acquired:
-        </h2>
-      </header>
       <div className="skills-list">
         <SkillsSection title={"Languages"} content={languages} />
         <SkillsSection title={"Frameworks"} content={frameworks} />
