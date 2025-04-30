@@ -44,3 +44,88 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
   margin-bottom: 15px; /* Add spacing below the image */
 }
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+  .project-image {
+    height: 20vh; /* Adjust image height for smaller screens */
+  }
+  .project-title {
+    font-size: 20px; /* Adjust title size for smaller screens */
+  }
+  .project-description {
+    font-size: 16px; /* Adjust description size for smaller screens */
+  }
+  .project-link {
+    font-size: 14px; /* Adjust link size for smaller screens */
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+  .project-links {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    gap: 5px; /* Adjust spacing between links */
+  }
+  .project-card:hover {
+    transform: scale(1.02); /* Scale up on hover for smaller screens */
+  }
+  .project-card:hover .project-image {
+    transform: scale(1.05); /* Scale image on hover for smaller screens */
+  }
+  .project-card:hover .project-description {
+    transform: translateY(
+      -5px
+    ); /* Move description up on hover for smaller screens */
+  }
+  .project-card:hover .project-title {
+    transform: translateY(
+      -5px
+    ); /* Move title up on hover for smaller screens */
+  }
+  .project-card:hover .project-link {
+    transform: translateY(-5px); /* Move link up on hover for smaller screens */
+  }
+}
+@media screen and (max-width: 480px) {
+  .project-card {
+    width: 100%; /* Full width on smaller screens */
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
+  .project-image {
+    height: 15vh; /* Adjust image height for smaller screens */
+  }
+  .project-title {
+    font-size: 18px; /* Adjust title size for smaller screens */
+  }
+  .project-description {
+    font-size: 14px; /* Adjust description size for smaller screens */
+  }
+  .project-link {
+    font-size: 12px; /* Adjust link size for smaller screens */
+    padding: 6px; /* Adjust padding for smaller screens */
+  }
+  .project-links {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    gap: 5px; /* Adjust spacing between links */
+  }
+}
+@media screen and (max-width: 320px) {
+  .project-card {
+    width: 100%; /* Full width on smaller screens */
+    margin: 2px; /* Adjust margin for smaller screens */
+  }
+  .project-image {
+    height: 10vh; /* Adjust image height for smaller screens */
+  }
+  .project-title {
+    font-size: 16px; /* Adjust title size for smaller screens */
+  }
+  .project-description {
+    font-size: 12px; /* Adjust description size for smaller screens */
+  }
+  .project-link {
+    font-size: 10px; /* Adjust link size for smaller screens */
+    padding: 4px; /* Adjust padding for smaller screens */
+  }
+}

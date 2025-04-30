@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+  .technology-label {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 5px; /* Adjust padding for smaller screens */
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .technology-label {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    padding: 4px; /* Adjust padding for smaller screens */
+    margin: 4px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .technology-label {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    padding: 3px; /* Adjust padding for smaller screens */
+    margin: 3px; /* Adjust margin for smaller screens */
+  }
+}

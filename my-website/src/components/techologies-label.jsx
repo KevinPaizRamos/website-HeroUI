@@ -5,6 +5,7 @@ import { SiFirebase, SiKotlin, SiAndroidstudio } from "react-icons/si"; // More 
 import { RiJavascriptFill, RiSupabaseFill, RiOpenaiFill } from "react-icons/ri";
 import { AiOutlineStock } from "react-icons/ai";
 import { motion } from "motion/react";
+import "../styles/technologies-label.css";
 function TechnologiesLabel({ technologies, Icon }) {
   const styles = {
     display: "flex",

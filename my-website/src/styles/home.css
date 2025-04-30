@@ -28,3 +28,47 @@
   max-width: 720px; /* Optional: Limit the width for better readability */
   font-weight: 500;
 }
+@media screen and (max-width: 768px) {
+  .home-layout h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+  .description {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  .welcome-message {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+}
+@media screen and (max-width: 480px) {
+  .home-layout h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+  .description {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+  .welcome-message {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+}
+@media screen and (max-width: 320px) {
+  .home-layout h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+  .description {
+    font-size: 0.75rem; /* Adjust font size for smaller screens */
+  }
+  .welcome-message {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-layout h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+  .description {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+  .welcome-message {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+}
